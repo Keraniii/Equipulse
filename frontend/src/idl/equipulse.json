@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0",
+  "name": "equipulse_program",
+  "instructions": [
+    {
+      "name": "initializeCampaign",
+      "accounts": [
+        { "name": "campaign", "isMut": true, "isSigner": true },
+        { "name": "authority", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "targetCap", "type": "u64" },
+        { "name": "baseFeeBps", "type": "u16" }
+      ]
+    },
+    {
+      "name": "contribute",
+      "accounts": [
+        { "name": "campaign", "isMut": true, "isSigner": false },
+        { "name": "contributor", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "amount", "type": "u64" }
+      ]
+    },
+    {
+      "name": "graduateToMeteora",
+      "accounts": [
+        { "name": "campaign", "isMut": true, "isSigner": false },
+        { "name": "authority", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": []
+    }
+  ],
+  "metadata": {
+    "address": "Fn9bqN4XoiHAwaAnaVTi4S6Y3rF4ekpYcPpSkUyZpthe"
+  }
+}
