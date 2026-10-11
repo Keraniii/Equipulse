@@ -1,0 +1,6 @@
+target/
+node_modules/
+.next/
+dist/
+.DS_Store
+*.pem
