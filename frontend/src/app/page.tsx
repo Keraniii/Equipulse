@@ -133,7 +133,7 @@ export default function Dashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 max-w-7xl mx-auto w-full p-6 space-y-8">
+      <main className="flex-1 max-w-[1680px] mx-auto w-full px-6 lg:px-12 py-8 space-y-8">
         {/* Metric Cards */}
         <section className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 shadow-sm">
