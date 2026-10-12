@@ -33,3 +33,13 @@ Standard constant-product pools and static launchpads suffer from MEV bundle exp
 
 - `equipulse-program/`: Solana Anchor smart contract (Rust)
 - `frontend/`: Next.js App Router, TailwindCSS, Recharts, Solana Wallet Adapter
+
+## 📊 Protocol Flowchart
+```mermaid
+flowchart LR
+    A[Retail & Bot Inflow] --> B[EquiPulse Bonding Pool]
+    B --> C{Velocity Engine}
+    C -- Normal Velocity --> D[Baseline 1% Fee]
+    C -- Bot Attack Burst --> E[Dynamic Anti-Snipe Fee up to 25%]
+    B -->|Cap Hit: 100 SOL| F[CPI Liquidity Migration]
+    F --> G[Meteora DAMM Pool]
